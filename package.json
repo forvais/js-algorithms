@@ -1,0 +1,42 @@
+{
+  "name": "@forvais/algorithms",
+  "description": "A poor adapation of C++'s algorithm library",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "imports": {
+    "#algorithms/*": "./src/*"
+  },
+  "exports": {},
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup src --platform node --format cjs,esm --out-dir dist --clean --target esnext --cjsInterop --dts",
+    "lint": "npm-run-all lint:*",
+    "lint:eslint": "eslint src/ --no-error-on-unmatched-pattern",
+    "lint:type-check": "tsc --noEmit",
+    "prepare": "husky",
+    "test:unit": "vitest run --dir __tests__/units --passWithNoTests"
+  },
+  "devDependencies": {
+    "@forvais/eslint-config-base": "^2.0.0",
+    "@forvais/eslint-config-typescript": "^1.0.0",
+    "@types/node": "^24.10.10",
+    "eslint": "^9.39.2",
+    "fixpack": "^4.0.0",
+    "globals": "^17.3.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "npm-run-all": "^4.1.5",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
+  "engines": {
+    "node": ">=24.7.0",
+    "pnpm": ">=10.28.2"
+  },
+  "packageManager": "pnpm@10.28.2",
+  "lint-staged": {
+    "*.{js,ts}": "eslint"
+  }
+}
