@@ -7,6 +7,11 @@
     "#datastructures/*": "./src/*"
   },
   "exports": {
+    "./collection": {
+      "collection": "./dist/collection.d.ts",
+      "import": "./dist/collection.js",
+      "require": "./dist/collection.cjs"
+    },
     "./types": {
       "types": "./dist/types.d.ts",
       "import": "./dist/types.js",
