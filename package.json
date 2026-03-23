@@ -12,6 +12,11 @@
       "import": "./dist/collection.js",
       "require": "./dist/collection.cjs"
     },
+    "./stack": {
+      "stack": "./dist/stack.d.ts",
+      "import": "./dist/stack.js",
+      "require": "./dist/stack.cjs"
+    },
     "./types": {
       "types": "./dist/types.d.ts",
       "import": "./dist/types.js",
