@@ -5,6 +5,10 @@ export class Stack<T> extends Collection<T> {
     this.buffer.push(value);
   }
 
+  public override peek() {
+    return this.buffer[this.size - 1];
+  }
+
   public pop() {
     return this.buffer.pop();
   }

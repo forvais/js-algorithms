@@ -1,5 +1,7 @@
-export class Collection<T> implements Iterable<T> {
+export abstract class Collection<T> implements Iterable<T> {
   protected buffer: T[] = [];
+
+  public abstract peek(): T | undefined;
 
   public get size() {
     return this.buffer.length;

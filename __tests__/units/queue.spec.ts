@@ -31,4 +31,12 @@ describe('queue', () => {
 
     expect(q.pop()).toBeUndefined();
   });
+
+  it('peeks from the head of the queue', () => {
+    const q = new Queue<number>();
+    q.push(1);
+    q.push(2);
+
+    expect(q.peek()).toBe(1);
+  });
 });

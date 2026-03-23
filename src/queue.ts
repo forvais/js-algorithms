@@ -5,6 +5,10 @@ export class Queue<T> extends Collection<T> {
     this.buffer.push(el);
   }
 
+  public override peek() {
+    return this.buffer[0];
+  }
+
   public pop() {
     return this.buffer.shift();
   }

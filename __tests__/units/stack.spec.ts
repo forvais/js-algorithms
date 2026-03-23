@@ -31,4 +31,12 @@ describe('stack', () => {
 
     expect(s.pop()).toBeUndefined();
   });
+
+  it('peeks from the tail of the stack', () => {
+    const s = new Stack<number>();
+    s.push(1);
+    s.push(2);
+
+    expect(s.peek()).toBe(2);
+  });
 });
