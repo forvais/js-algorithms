@@ -1,0 +1,13 @@
+{
+  "$schema": "https://www.schemastore.org/tsconfig",
+  "extends": ["./tsconfig.node.json"],
+  "compilerOptions": {
+    "paths": {
+      "#datastructures/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "__tests__/**/*"
+  ]
+}

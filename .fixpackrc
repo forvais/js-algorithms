@@ -1,0 +1,63 @@
+{
+  "sortToTop": [
+    "name",
+    "description",
+    "private",
+    "version",
+    "type",
+    "module",
+    "types",
+    "imports",
+    "exports",
+    "bin",
+    "config",
+    "license",
+    "author",
+    "repository",
+    "homepage",
+    "bugs",
+    "main",
+    "scripts",
+    "dependencies",
+    "peerDependencies",
+    "devDependencies",
+    "optionalDependencies",
+    "engines",
+    "packageManager"
+  ],
+  "required": [
+    "name",
+    "version",
+    "license"
+  ],
+  "warn": [
+    "description",
+    "repository",
+    "homepage",
+    "bugs",
+    "keywords",
+    "author",
+    "main",
+    "types"
+  ],
+  "sortAZ": [
+    "scripts",
+    "dependencies",
+    "devDependencies",
+    "peerDependencies",
+    "optionalDependencies",
+    "bin",
+    "config"
+  ],
+  "filters": [
+    "author",
+    "bugs",
+    "contributors",
+    "description",
+    "homepage",
+    "keywords",
+    "license",
+    "main",
+    "repository"
+  ]
+}

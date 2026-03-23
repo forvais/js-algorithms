@@ -1,0 +1,17 @@
+{
+  "$schema": "https://www.schemastore.org/tsconfig",
+  "extends": [
+    "./tsconfig.base.json"
+  ],
+  "compilerOptions": {
+    // Language Targeting
+    "target": "esnext",
+    // Library Definitions
+    "lib": [
+      "ESNext"
+    ],
+    // Module System
+    "module": "nodenext",
+    "moduleResolution": "nodenext"
+  }
+}
