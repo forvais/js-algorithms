@@ -1,7 +1,15 @@
-export abstract class Collection<T> implements Iterable<T> {
-  protected buffer: T[] = [];
+import type { Optional } from './types.js';
 
-  public abstract peek(): T | undefined;
+function transformIdentity<T, R>(el: R): T {
+  return el as unknown as T;
+}
+
+export abstract class Collection<ViewType, StoredType = ViewType> implements Iterable<ViewType> {
+  protected buffer: StoredType[] = [];
+
+  public constructor(protected readonly transform: Optional<(el: StoredType) => ViewType> = transformIdentity<ViewType, StoredType>) { }
+
+  public abstract peek(): ViewType | undefined;
 
   public get size() {
     return this.buffer.length;
@@ -16,10 +24,14 @@ export abstract class Collection<T> implements Iterable<T> {
   }
 
   public toArray() {
-    return structuredClone(this.buffer);
+    return this.transform
+      ? structuredClone(this.buffer.map(this.transform))
+      : structuredClone(this.buffer as unknown as ViewType[]);
   }
 
-  [Symbol.iterator](): Iterator<T> {
-    return this.buffer.values();
+  [Symbol.iterator](): Iterator<ViewType> {
+    return this.transform
+      ? this.buffer.map(this.transform).values()
+      : (this.buffer as unknown as ViewType[]).values();
   }
 }
