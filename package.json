@@ -7,25 +7,25 @@
     "#datastructures/*": "./src/datastructures/*"
   },
   "exports": {
-    "./datastructures/heap": {
-      "import": "./dist/datastructures/heap.mjs",
-      "require": "./dist/datastructures/heap.cjs"
+    "./ds/heap": {
+      "import": "./dist/ds/heap.mjs",
+      "require": "./dist/ds/heap.cjs"
     },
-    "./datastructures/priority-queue": {
-      "import": "./dist/datastructures/priority-queue.mjs",
-      "require": "./dist/datastructures/priority-queue.cjs"
+    "./ds/priority-queue": {
+      "import": "./dist/ds/priority-queue.mjs",
+      "require": "./dist/ds/priority-queue.cjs"
     },
-    "./datastructures/queue": {
-      "import": "./dist/datastructures/queue.mjs",
-      "require": "./dist/datastructures/queue.cjs"
+    "./ds/queue": {
+      "import": "./dist/ds/queue.mjs",
+      "require": "./dist/ds/queue.cjs"
     },
-    "./datastructures/stack": {
-      "import": "./dist/datastructures/stack.mjs",
-      "require": "./dist/datastructures/stack.cjs"
+    "./ds/stack": {
+      "import": "./dist/ds/stack.mjs",
+      "require": "./dist/ds/stack.cjs"
     },
-    "./datastructures/types": {
-      "import": "./dist/datastructures/types.mjs",
-      "require": "./dist/datastructures/types.cjs"
+    "./ds/types": {
+      "import": "./dist/ds/types.mjs",
+      "require": "./dist/ds/types.cjs"
     }
   },
   "license": "MIT",

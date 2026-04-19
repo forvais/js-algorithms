@@ -1,11 +1,11 @@
 import { defineConfig, type UserConfig } from 'tsdown';
 
 const entries = {
-  'datastructures/stack': 'src/datastructures/Stack.ts',
-  'datastructures/queue': 'src/datastructures/Queue.ts',
-  'datastructures/heap': 'src/datastructures/Heap.ts',
-  'datastructures/priority-queue': 'src/datastructures/PriorityQueue.ts',
-  'datastructures/types': 'src/datastructures/types.ts',
+  'ds/stack': 'src/datastructures/Stack.ts',
+  'ds/queue': 'src/datastructures/Queue.ts',
+  'ds/heap': 'src/datastructures/Heap.ts',
+  'ds/priority-queue': 'src/datastructures/PriorityQueue.ts',
+  'ds/types': 'src/datastructures/types.ts',
 };
 
 const shared: UserConfig = {
