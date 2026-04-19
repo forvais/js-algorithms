@@ -1,31 +1,31 @@
 {
-  "name": "@forvais/datastructures",
+  "name": "@forvais/algorithms",
   "private": false,
-  "version": "0.0.0",
+  "version": "1.0.0-dev.0",
   "type": "module",
   "imports": {
-    "#datastructures/*": "./src/*"
+    "#datastructures/*": "./src/datastructures/*"
   },
   "exports": {
-    "./heap": {
-      "import": "./dist/heap.mjs",
-      "require": "./dist/heap.cjs"
+    "./datastructures/heap": {
+      "import": "./dist/datastructures/heap.mjs",
+      "require": "./dist/datastructures/heap.cjs"
     },
-    "./priority-queue": {
-      "import": "./dist/priority-queue.mjs",
-      "require": "./dist/priority-queue.cjs"
+    "./datastructures/priority-queue": {
+      "import": "./dist/datastructures/priority-queue.mjs",
+      "require": "./dist/datastructures/priority-queue.cjs"
     },
-    "./queue": {
-      "import": "./dist/queue.mjs",
-      "require": "./dist/queue.cjs"
+    "./datastructures/queue": {
+      "import": "./dist/datastructures/queue.mjs",
+      "require": "./dist/datastructures/queue.cjs"
     },
-    "./stack": {
-      "import": "./dist/stack.mjs",
-      "require": "./dist/stack.cjs"
+    "./datastructures/stack": {
+      "import": "./dist/datastructures/stack.mjs",
+      "require": "./dist/datastructures/stack.cjs"
     },
-    "./types": {
-      "import": "./dist/types.mjs",
-      "require": "./dist/types.cjs"
+    "./datastructures/types": {
+      "import": "./dist/datastructures/types.mjs",
+      "require": "./dist/datastructures/types.cjs"
     }
   },
   "license": "MIT",
