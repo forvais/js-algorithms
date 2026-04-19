@@ -29,7 +29,10 @@
     }
   },
   "license": "MIT",
-  "repository": "forvais/js-algorithms",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forvais/js-algorithms.git"
+  },
   "scripts": {
     "build": "tsdown",
     "lint": "npm-run-all lint:*",
