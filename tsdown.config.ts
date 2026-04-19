@@ -32,6 +32,11 @@ export default defineConfig([
       devExports: false,
       packageJson: false,
     },
+    publint: true,
+    attw: {
+      enabled: true,
+      profile: 'node16',
+    },
   },
 
   {

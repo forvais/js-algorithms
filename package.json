@@ -38,6 +38,7 @@
     "test:unit": "vitest run --dir __tests__/units --passWithNoTests"
   },
   "devDependencies": {
+    "@arethetypeswrong/core": "^0.18.2",
     "@forvais/eslint-config-base": "^2.0.0",
     "@forvais/eslint-config-typescript": "^1.0.0",
     "@types/node": "^24.10.10",
@@ -47,6 +48,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "npm-run-all": "^4.1.5",
+    "publint": "^0.3.18",
     "tsdown": "^0.21.9",
     "typescript": "^5.9.3",
     "vitest": "^4.0.18"
