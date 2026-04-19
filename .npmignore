@@ -5,3 +5,4 @@ src/
 CHANGELOG.md
 eslint.config.js
 tsconfig.*
+tsdown.*
