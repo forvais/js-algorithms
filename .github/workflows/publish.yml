@@ -30,4 +30,15 @@ jobs:
         run: pnpm build
 
       - name: Publish package
-        run: npm publish --access=public
+        shell: bash
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+
+          if [[ "$VERSION" == *"-"* ]]; then
+            TAG=$(echo "$VERSION" | cut -d'-' -f2 | cut -d'.' -f1)
+            echo "Publishing prerelease with tag: $TAG"
+            npm publish --access=public --tag "$TAG"
+          else
+            echo "Publishing stable release"
+            npm publish --access=public --tag latest
+          fi
