@@ -7,15 +7,25 @@
     "#datastructures/*": "./src/*"
   },
   "exports": {
-    "./collection": {
-      "collection": "./dist/collection.d.ts",
-      "import": "./dist/collection.js",
-      "require": "./dist/collection.cjs"
-    },
     "./stack": {
-      "stack": "./dist/stack.d.ts",
-      "import": "./dist/stack.js",
-      "require": "./dist/stack.cjs"
+      "types": "./dist/Stack.d.ts",
+      "import": "./dist/Stack.js",
+      "require": "./dist/Stack.cjs"
+    },
+    "./queue": {
+      "types": "./dist/Queue.d.ts",
+      "import": "./dist/Queue.js",
+      "require": "./dist/Queue.cjs"
+    },
+    "./heap": {
+      "types": "./dist/Heap.d.ts",
+      "import": "./dist/Heap.js",
+      "require": "./dist/Heap.cjs"
+    },
+    "./priority-queue": {
+      "types": "./dist/PriorityQueue.d.ts",
+      "import": "./dist/PriorityQueue.js",
+      "require": "./dist/PriorityQueue.cjs"
     },
     "./types": {
       "types": "./dist/types.d.ts",
