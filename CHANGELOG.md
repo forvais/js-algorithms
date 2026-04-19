@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.0-dev.2](https://github.com/forvais/js-algorithms/compare/v1.0.0-dev.1...v1.0.0-dev.2) (2026-04-19)
+
+
+### Miscellaneous Chores
+
+* release 1.0.0-dev.2 ([aa141f0](https://github.com/forvais/js-algorithms/commit/aa141f0e4c82d82b3209ef26be2d4b6fa7d0a85c))
+
 ## 1.0.0-dev.1 (2026-04-19)
 
 
